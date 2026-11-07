@@ -84,7 +84,7 @@ flowchart TB
 
 ## OUR Application UI (`app.py`)
 <img src="Screenshot 2026-11-07 112911.png" width="600">
-<img src="Screenshot 2026-11-07 112911.png" width="600">
+<img src="Screenshot 2026-11-07 112936.png" width="600">
 <img src="Screenshot 2026-11-07 112911.png" width="600">
 <img src="Screenshot 2026-11-07 112911.png" width="600">
 **Live Application:** [https://cat-anddogimageclassification-tkpmybq9v5qrkbzla8dsts.streamlit.app/](https://cat-anddogimageclassification-tkpmybq9v5qrkbzla8dsts.streamlit.app/)
