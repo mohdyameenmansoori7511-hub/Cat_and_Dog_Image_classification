@@ -1,13 +1,8 @@
 """
 ===============================================================================
 Project ID   : DL-003
-Project Title: Cat and Dog Image Classification - Real-Time Deep Learning App
-Group ID     : BTech_DL_041 | Team Leader: Shivam Chauhan (BCS2024016)
-Mentor Name  : Mr. Pradeep Singh | Invertis University Bareilly (CSED)
-Description  : 100% Dynamic Deep Learning Inference & Feature Map Visualizer.
-               Zero hardcoded metrics & zero fallback models — all predictions,
-               probabilities, tensor shapes, parameter counts, and Conv2D
-               feature maps are computed live from `cat_dog_classifier.keras`.
+Project Title: Cat and Dog Image Classification
+Group ID     : BTech_DL_041 | Invertis University Bareilly (CSED)
 ===============================================================================
 """
 
@@ -172,14 +167,9 @@ def get_dynamic_layer_table(model: tf.keras.Model) -> list[dict]:
 # 4. Sidebar: Model Loading & Live Dynamic Model Inspector
 # -----------------------------------------------------------------------------
 with st.sidebar:
-    st.markdown("## 🎓 Invertis University Bareilly")
+    st.markdown("## Invertis University Bareilly")
     st.caption("**CSED | Project ID: DL-003 | Group: BTech_DL_041**")
-    st.markdown(
-        """
-        - **Mentor:** Mr. Pradeep Singh
-        - **Team Leader:** **Shivam Chauhan** (`BCS2024016`)
-        """
-    )
+    
     st.divider()
     st.subheader("🧠 Real Trained `.keras` Model")
 
@@ -224,18 +214,18 @@ with st.sidebar:
 # -----------------------------------------------------------------------------
 # 5. Main Interface
 # -----------------------------------------------------------------------------
-st.title("🐾 Cat and Dog Image Classification (DL-003)")
+st.title("Cat and Dog Image Classification (DL-003)")
 st.markdown(
-    "**100% Real-Time Deep Learning Inference:** Every prediction, sigmoid probability, "
+    "**Real-Time Deep Learning Inference:** Every prediction, sigmoid probability, "
     "parameter count, and convolutional feature map below is computed live at runtime "
-    "from your trained `cat_dog_classifier.keras` neural network."
+    "from our trained `cat_dog_classifier.keras` neural network."
 )
 
 if active_model is None:
     st.error(
         "### ⚠️ Valid `cat_dog_classifier.keras` File Not Loaded\n"
-        "Apne Google Colab se asli `cat_dog_classifier.keras` repo mein dalein "
-        "(ya left sidebar mein upload karein)."
+        "please upload Google Colab model `cat_dog_classifier.keras`  in repo "
+        "or here."
     )
     st.stop()
 
