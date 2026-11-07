@@ -13,24 +13,24 @@ The objective of this project is to design, train, and deploy an automated binar
 * **Deep Neural Network Classification:** Train a 3-block Sequential CNN (`Conv2D` + `MaxPooling2D` + `Dense` + `Dropout(0.5)`) using the Adam optimizer and Binary Cross-Entropy loss to classify unseen images across varied indoor and outdoor backgrounds.
 * **Model Interpretability and Live Deployment:** Provide a clean web interface on Streamlit Cloud that displays predicted class labels, confidence percentages, raw Sigmoid outputs, and intermediate `Conv2D` feature map activations.
 
-## Team Members and Role Credits
+## MY Team Members and their key Roles
 
-| Sr. No. | Student Name | Student ID | Roll No. | Role and Contribution |
-| :---: | :--- | :---: | :---: | :--- |
-| **1** | **Shivam Chauhan (Team Leader)** | `BCS2024016` | `2410303464` | System Design, CNN Model Training and Streamlit Cloud Deployment |
-| **2** | **Mohd Adnan** | `BCS2024007` | `2410303271` | Dataset Collection and Folder Setup |
-| **3** | **Krish Gupta** | `BCS2024013` | `2410303234` | Image Format Validation and Cleaning |
-| **4** | **Ginesh Singh** | `BCS2024020` | `2410303186` | Duplicate Image Check and Filtering |
-| **5** | **Neil Bhardwaj** | `BCS2024030` | `2410303306` | Train, Validation and Test Data Splitting |
-| **6** | **Hirdesh Kumar** | `BCS2024033` | `2410303209` | Image Resizing (`150×150`) and Pixel Normalization |
-| **7** | **Mohit Babu** | `BCS2024034` | `2410303293` | Image Augmentation (Flip, Rotate and Zoom) |
-| **8** | **Shivam Sharma** | `BCS2024035` | `2410303467` | CNN Layer Design (`Conv2D` and `MaxPooling2D`) |
-| **9** | **Ramjeet Yadav** | `BCS2024039` | `2410303385` | Model Comparison and Transfer Learning Setup |
-| **10** | **Shaurya Kumar Yadav** | `BCS2024049` | `2410303452` | Model Training, Loss Tracking and Early Stopping |
-| **11** | **Shivanshu Sharma** | `BCS2024056` | `2410303473` | Accuracy, Precision, Recall and Confusion Matrix |
-| **12** | **Mohd Yameen** | `BCS2024066` | `2410303289` | Testing on Real-World and Varied Backgrounds |
-| **13** | **Akhilesh Bhargav** | `BCS2024081` | `2410303048` | Live `Conv2D` Feature Map Visualization |
-| **14** | **Siddharth Mishra** | `BCS2024087` | `2410303481` | Streamlit Web UI Layout and Application Testing |
+| Sr. No. | Student Name | worked area |
+| :---: | :--- | :---: | :--- |
+| **1** | **Shivam Chauhan (Team Leader)** | System Design, CNN Model Training and Streamlit Cloud Deployment |
+| **2** | **Mohd Adnan** | Dataset Collection and Folder Setup |
+| **3** | **Krish Gupta** | Image Format Validation and Cleaning |
+| **4** | **Ginesh Singh** | Duplicate Image Check and Filtering |
+| **5** | **Neil Bhardwaj** | Train, Validation and Test Data Splitting |
+| **6** | **Hirdesh Kumar** | Image Resizing (`150×150`) and Pixel Normalization |
+| **7** | **Mohit Babu** | Image Augmentation (Flip, Rotate and Zoom) |
+| **8** | **Shivam Sharma** |  CNN Layer Design (`Conv2D` and `MaxPooling2D`) |
+| **9** | **Ramjeet Yadav** |  Model Comparison and Transfer Learning Setup |
+| **10** | **Shaurya Kumar Yadav** | Model Training, Loss Tracking and Early Stopping |
+| **11** | **Shivanshu Sharma** | Accuracy, Precision, Recall and Confusion Matrix |
+| **12** | **Mohd Yameen** | Testing on Real-World and Varied Backgrounds |
+| **13** | **Akhilesh Bhargav** | Live `Conv2D` Feature Map Visualization |
+| **14** | **Siddharth Mishra** | Streamlit Web UI Layout and Application Testing |
 
 ## System Architecture and Flow Diagram
 
