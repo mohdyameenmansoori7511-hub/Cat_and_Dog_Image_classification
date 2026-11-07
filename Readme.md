@@ -28,26 +28,52 @@
 *(Paste this block directly into your GitHub `README.md` or `docs/architecture_flow.md` — GitHub renders `mermaid` blocks automatically as interactive diagrams!)*
 
 ```mermaid
-flowchart LR
-    subgraph UI["1. Streamlit Frontend (app.py)"]
-        A["User Uploads Image<br/>(.jpg / .jpeg / .png)"] --> B["PIL.Image.open()<br/>Resize to 150×150 RGB"]
-        B --> C["Normalize Pixels (/ 255.0)<br/>Expand Batch: (1, 150, 150, 3)"]
-    end
+---
+config:
+  layout: fixed
+---
+flowchart TB
+ subgraph UI["1. Streamlit Frontend (app.py)"]
+        B["PIL.Image.open()<br>Resize to 150×150 RGB"]
+        A["User Uploads Image<br>(.jpg / .jpeg / .png)"]
+        C["Normalize Pixels (/ 255.0)<br>Expand Batch: (1, 150, 150, 3)"]
+  end
+ subgraph CNN["2. Sequential CNN Engine (cat_dog_classifier.keras)"]
+        D["Block 1: Conv2D(32, 3×3, ReLU)<br>+ MaxPool2D(2×2) → (74, 74, 32)"]
+        E["Block 2: Conv2D(64, 3×3, ReLU)<br>+ MaxPool2D(2×2) → (36, 36, 64)"]
+        F["Block 3: Conv2D(128, 3×3, ReLU)<br>+ MaxPool2D(2×2) → (17, 17, 128)"]
+        G["Flatten → (36,992 units)<br>Dense(512, ReLU) + Dropout(0.5)"]
+        H["Output: Dense(1, Sigmoid)<br>Probability P(y) ∈ [0.0, 1.0]"]
+  end
+ subgraph OUT["3. Real-Time Dashboard"]
+        I["Predicted: Cat 🐱<br>Confidence: (1 - P) × 100%"]
+        J["Predicted: Dog 🐶<br>Confidence: P × 100%"]
+        K["Intermediate Conv2D<br>Feature Map Heatmaps"]
+  end
+    A L_A_B_0@--> B
+    B L_B_C_0@--> C
+    C L_C_D_0@--> D
+    D L_D_E_0@--> E
+    E L_E_F_0@--> F
+    F L_F_G_0@--> G
+    G L_G_H_0@--> H
+    H L_H_I_0@-- "P &lt; 0.5" --> I
+    H L_H_J_0@-- "P ≥ 0.5" --> J
+    D L_D_K_0@-. "Functional Sub-Model" .-> K
+    E L_E_K_0@-. "Functional Sub-Model" .-> K
 
-    subgraph CNN["2. Sequential CNN Engine (cat_dog_classifier.keras)"]
-        C --> D["Block 1: Conv2D(32, 3×3, ReLU)<br/>+ MaxPool2D(2×2) → (74, 74, 32)"]
-        D --> E["Block 2: Conv2D(64, 3×3, ReLU)<br/>+ MaxPool2D(2×2) → (36, 36, 64)"]
-        E --> F["Block 3: Conv2D(128, 3×3, ReLU)<br/>+ MaxPool2D(2×2) → (17, 17, 128)"]
-        F --> G["Flatten → (36,992 units)<br/>Dense(512, ReLU) + Dropout(0.5)"]
-        G --> H["Output: Dense(1, Sigmoid)<br/>Probability P(y) ∈ [0.0, 1.0]"]
-    end
 
-    subgraph OUT["3. Real-Time Dashboard & Explainability"]
-        H -->|"P < 0.5"| I["Predicted: Cat 🐱<br/>Confidence: (1 - P) × 100%"]
-        H -->|"P ≥ 0.5"| J["Predicted: Dog 🐶<br/>Confidence: P × 100%"]
-        D -.->|"Functional Sub-Model"| K["Intermediate Conv2D<br/>Feature Map Heatmaps"]
-        E -.->|"Functional Sub-Model"| K
-    end
+    L_A_B_0@{ animation: fast } 
+    L_B_C_0@{ animation: fast } 
+    L_C_D_0@{ curve: natural, animation: slow } 
+    L_D_E_0@{ animation: slow } 
+    L_E_F_0@{ animation: fast } 
+    L_F_G_0@{ animation: fast } 
+    L_G_H_0@{ animation: fast } 
+    L_H_I_0@{ animation: fast } 
+    L_H_J_0@{ animation: fast } 
+    L_D_K_0@{ animation: fast } 
+    L_E_K_0@{ animation: fast }
 ```
 
 ## Layer-by-Layer CNN Architecture (`cat_dog_classifier.keras`)
