@@ -171,7 +171,7 @@ with st.sidebar:
     st.caption("**CSED | Project ID: DL-003 | Group: BTech_DL_041**")
     
     st.divider()
-    st.subheader("🧠 Real Trained `.keras` Model")
+    st.subheader(" Upload your Trained `.keras` Model if you have if not try our")
 
     repo_model_path = find_repo_model()
     uploaded_model_file = st.file_uploader(
