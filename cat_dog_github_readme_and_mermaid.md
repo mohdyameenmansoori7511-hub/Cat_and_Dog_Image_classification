@@ -16,7 +16,7 @@ The objective of this project is to design, train, and deploy an automated binar
 ## MY Team Members and their key Roles
 
 | Sr. No. | Student Name | worked area |
-| :---: | :---: | :---: | :--- |
+| :---: | :---: | :---: |
 | **1** | **Shivam Chauhan (Team Leader)** | System Design, CNN Model Training and Streamlit Cloud Deployment |
 | **2** | **Mohd Adnan** | Dataset Collection and Folder Setup |
 | **3** | **Krish Gupta** | Image Format Validation and Cleaning |
