@@ -82,33 +82,9 @@ flowchart TB
     L_E_K_0@{ animation: fast }
 ```
 
-## Web Application User Interface (`app.py`)
+## OUR Application UI (`app.py`)
 
 **Live Application:** [https://cat-anddogimageclassification-tkpmybq9v5qrkbzla8dsts.streamlit.app/](https://cat-anddogimageclassification-tkpmybq9v5qrkbzla8dsts.streamlit.app/)
-
-### Interface Components
-
-1. **Sidebar Model Loader**:
-   * Displays institutional and group header (`Invertis University Bareilly`) and provides a custom model uploader supporting `.keras` and `.h5` files up to `200MB`, while loading the pre-trained `cat_dog_classifier.keras` model by default.
-2. **Image Uploader**:
-   * Drag-and-drop file uploader (`Choose an image...`) accepting `.jpg`, `.jpeg`, and `.png` photographs.
-3. **Classification Results Panel**:
-   * **Left Column**: Displays the uploaded input photograph.
-   * **Right Column (`Classification Results`)**: Displays the predicted class banner (`Predicted: CAT` for $P < 0.5$ or `Predicted: DOG` for $P \ge 0.5$), prediction confidence percentage with a progress bar, raw Sigmoid output value (`0.0000` to `1.0000`), and an expandable raw confidence breakdown panel.
-4. **Live Convolutional Feature Maps**:
-   * Extracts and renders intermediate activation heatmaps from the convolutional layers (`conv2d`, `conv2d_1`, `conv2d_2`) using a multi-output Keras sub-model so users can inspect how the network isolates edges, textures, and facial contours.
-
-### Application Screenshots
-
-| 1. Main Dashboard and Sidebar | 2. Prediction Output and Confidence |
-| :---: | :---: |
-|  |  |
-| *Main image uploader and sidebar `.keras` model loader.* | *Uploaded image preview, predicted class banner, confidence bar, and raw Sigmoid score.* |
-
-| 3. Raw Confidence Breakdown | 4. Live `Conv2D` Feature Map Heatmaps |
-| :---: | :---: |
-|  |  |
-| *Expandable class probability breakdown (`< 0.5 = Cat` \| `≥ 0.5 = Dog`).* | *Intermediate `Conv2D` layer activations extracted from the uploaded image.* |
 
 ## CNN Model Architecture (`cat_dog_classifier.keras`)
 
