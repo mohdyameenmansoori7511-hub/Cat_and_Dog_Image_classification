@@ -69,7 +69,7 @@ flowchart TB
 <img src="screenshots\screenshots/Screenshot 2026-11-08 065004.png" width="1000">
 <img src="screenshots\screenshots/Screenshot 2026-11-08 065022.png" width="1000">
 <img src="screenshots\screenshots/Screenshot 2026-11-08 065041.png" width="1000">
-**Live Application:** [https://cat-anddogimageclassification-tkpmybq9v5qrkbzla8dsts.streamlit.app/](https://cat-anddogimageclassification-tkpmybq9v5qrkbzla8dsts.streamlit.app/)
+**Live Application:**  (https://catdogimageclassificationdeeplearning.streamlit.app/)
 
 ## CNN Model Architecture (`cat_dog_classifier.keras`)
 
@@ -114,7 +114,7 @@ flowchart TB
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/xploreshivam/cat-and_dog_image_classification.git
+git clone https://catdogimageclassificationdeeplearning.streamlit.app/
 cd cat-and_dog_image_classification
 
 # 2. Install required dependencies
