@@ -65,10 +65,10 @@ flowchart TB
 ```
 
 ## OUR Application UI (`app.py`)
-<img src="Screenshot 2026-11-07 112911.png" width="1000">
-<img src="Screenshot 2026-11-07 112936.png" width="1000">
-<img src="Screenshot 2026-11-07 113003.png" width="1000">
-<img src="Screenshot 2026-11-07 113026.png" width="1000">
+<img src="screenshots\Screenshot 2026-11-07 112911.png" width="1000">
+<img src="screenshots\Screenshot 2026-11-07 112936.png" width="1000">
+<img src="screenshots\Screenshot 2026-11-07 113003.png" width="1000">
+<img src="screenshots\Screenshot 2026-11-07 113026.png" width="1000">
 **Live Application:** [https://cat-anddogimageclassification-tkpmybq9v5qrkbzla8dsts.streamlit.app/](https://cat-anddogimageclassification-tkpmybq9v5qrkbzla8dsts.streamlit.app/)
 
 ## CNN Model Architecture (`cat_dog_classifier.keras`)
