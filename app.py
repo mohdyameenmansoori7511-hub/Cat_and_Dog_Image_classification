@@ -214,7 +214,7 @@ with st.sidebar:
 # -----------------------------------------------------------------------------
 # 5. Main Interface
 # -----------------------------------------------------------------------------
-st.title("Cat and Dog Image Classification (DL-003)")
+st.title("Cat and Dog Image Classification")
 st.markdown(
     "**Real-Time Deep Learning Inference:** Every prediction, sigmoid probability, "
     "parameter count, and convolutional feature map below is computed live at runtime "
