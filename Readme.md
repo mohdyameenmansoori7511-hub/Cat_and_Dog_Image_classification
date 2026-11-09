@@ -115,7 +115,7 @@ flowchart TB
 ```bash
 # 1. Clone the repository
 git clone https://catdogimageclassificationdeeplearning.streamlit.app/
-cd cat-and_dog_image_classification
+cd Cat_and_Dog_Image_classification
 
 # 2. Install required dependencies
 pip install -r requirements.txt
